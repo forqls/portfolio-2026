@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full h-64 flex items-center justify-center bg-transparent">
   <p className="text-sm text-gray-500">
-    Copyright 2025. AnHyobin All Rights Reserved.
+    Copyright 2026. AnHyobin All Rights Reserved.
   </p>
 </footer>
   );

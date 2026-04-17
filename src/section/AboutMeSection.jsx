@@ -22,16 +22,16 @@ import DiscordIcon from '../assets/skill_icons/Discord.svg?react';
 // 데이터: Q&A, 스킬, 키워드, 아이콘 매핑
 const interviews = [
   {
-    question: '개발자가 된 계기와 성향은?',
-    answer: '웹 서비스를 만들면서 단순한 기능 구현을 넘어서 사용자 경험을 고려한 기능 중심 개발에 흥미를 느꼈습니다. 프론트와 백엔드를 모두 경험하며 서비스 전체의 사이클을 이해하고, 작은 차이를 만들어 더 나은 개발자가 되고자 노력하고 있습니다.',
+    question: '웹 퍼블리셔가 된 계기와 본인의 성향은?',
+    answer: '디자인이 실제 웹 표준을 기반으로 브라우저에 생동감 있게 구현되는 과정에 매력을 느껴 퍼블리싱 업무를 시작하게 되었습니다. 프론트엔드와 백엔드의 흐름을 이해하고 있기에, 개발 생산성을 높이는 효율적인 마크업 구조를 설계하며 전체 서비스 품질을 높이는 데 기여하고자 노력합니다.',
   },
   {
-    question: '개발할 때 가장 중요하게 생각하는 것은?',
-    answer: '작은 디테일이 경험 전체를 바꾼다는 믿음으로 기능 하나를 구현하더라도 코드, 예외 처리, 보안, 성능까지 신경 쓰려고 노력합니다. 또한, 동료 프로젝트에선 소통과 역할을 중시하며, 작은 피드백도 빠르게 반영하는 유연한 자세를 유지하려고 합니다.',
+    question: '퍼블리싱 작업 시 가장 중요하게 생각하는 것은?',
+    answer: "'1px의 차이가 사용자 경험(UX)의 완성도를 결정한다'는 믿음으로 디테일한 구현에 집중합니다. 정교한 CSS 설계는 물론, 크로스 브라우징, 웹 접근성, 그리고 성능을 고려한 최적화된 코드를 작성하는 것을 최우선으로 합니다.",
   },
   {
-    question: '자기개발을 위해 어떤 노력을 해왔나요?',
-    answer: '효율적인 개발을 위해 지속적인 학습과 피드백 수용을 실천해왔습니다. 오류가 발생했을 때 단순히 고치기보다 원인을 분석하고 체계적인 해결 방안을 찾는 습관을 들였습니다. 스터디와 프로젝트를 통해 다양한 도전을 즐기고 있습니다.',
+    question: '전문성 향상을 위해 어떤 노력을 해왔나요?',
+    answer: '단순히 화면을 시각적으로 구현하는 것을 넘어, 내가 작성한 마크업과 코드가 실제 데이터 환경에서 어떻게 흐르고 처리되는지 깊이 있게 파악하고자 개발 전문 과정(학원)을 수료했습니다. 이를 통해 프론트엔드와 데이터의 유기적인 관계를 학습하며, 단순한 UI 구현을 넘어 데이터 바인딩과 유지보수가 용이한 효율적인 마크업 구조를 설계하는 역량을 길렀습니다.',
   },
 ];
 const skills = [
@@ -176,13 +176,13 @@ const AboutMeSection = () => {
           {/* 오른쪽 컬럼 */}
           <div className="flex flex-col space-y-[1.375rem]">
             
-            {/* 1. 프로필 이미지 div: backdrop-blur 추가 */}
+            {/* 1. 프로필 이미지 */}
             <div className="flex items-end justify-center bg-profile-image-bg/80 backdrop-blur-[20px] border-[20px] border-profile-border rounded-[15px] aspect-square">
               {/* 이미지 너비를 w-2/3로 수정 */}
               <img src="/profile-image.png" alt="안효빈 프로필 사진" className="w-2/3" />
             </div>
 
-            {/* 2. 해시태그 div: backdrop-blur 추가 */}
+            {/* 2. 해시태그  */}
             <div className="bg-profile-image-bg/80 backdrop-blur-[20px] border border-profile-border rounded-[15px] p-[2.5rem] px-[2.1875rem]">
               <div className="flex justify-between">
                 {keywords.map((keyword) => (
@@ -191,12 +191,12 @@ const AboutMeSection = () => {
               </div>
             </div>
             
-            {/* 3. 자기소개 div: backdrop-blur 추가 */}
+            {/* 3. 자기소개 */}
             <div className="bg-profile-image-bg/80 backdrop-blur-[20px] border border-profile-border rounded-[15px] p-[2.5rem] px-[2.1875rem] text-left">
               <p className="text-lg font-light leading-relaxed text-brand-dark">
-                <span className="font-semibold">작은 차이</span>를 만드는 개발자, <span className="font-semibold">안효빈</span>입니다.
-                <br/>서비스 전반의 흐름을 이해하고, 
-                <br/><span className="font-semibold">백엔드</span>와 <span className="font-semibold">프론트</span>를 넘나드는 개발자로 
+                <span className="font-semibold">디테일의 차이</span>로 완성도를 높이는 퍼블리셔, <span className="font-semibold">안효빈</span>입니다.
+                <br/>단순한 구현을 넘어 데이터의 흐름과 사용자 경험을 이해하며,
+                <br/><span className="font-semibold">디자인</span>과 <span className="font-semibold">개발</span>을 잇는 전문가로
                 <br/>성장하고 있습니다.
               </p>
             </div>
