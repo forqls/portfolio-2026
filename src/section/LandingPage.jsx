@@ -23,7 +23,7 @@ function LandingPage() {
 
         <p className="text-[71px] leading-tight text-brand-dark">
           <span className="font-medium">I'm Hyobin An, a </span>
-          <span className="font-black">developer</span>
+          <span className="font-black">Web Publisher</span>
         </p>
       </div>
     </section>
