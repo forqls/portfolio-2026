@@ -17,6 +17,7 @@ import { useModal } from './components/ModalContext';
 import CustomModal from './components/CustomModal';
 import RevealOverlay from "./components/RevealOverlay.jsx";
 
+
 function App() {
   const scrollWrapperRef = useRef(null);
   const contentRef = useRef(null);
